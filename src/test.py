@@ -81,14 +81,14 @@ def bar_chart(success: int, failed: int) -> None:
   plt.text(
       -0.5,
       success + 0.5,
-      f'{accuracy:.1f}%',
+      f'{accuracy:.3f}%',
       fontsize=12,
       color='blue',
   )
   plt.text(
       1.2,
       failed + 0.5,
-      f'{100 - accuracy:.1f}%',
+      f'{100 - accuracy:.3f}%',
       fontsize=12,
       color='blue',
   )
@@ -136,7 +136,7 @@ def main() -> None:
         failed += 1
 
       bar.set_description(
-          f"Acc: {success / (success + failed) * 100:.2f} % | Testing")
+          f"Acc: {success / (success + failed) * 100:.3f} % | Testing")
       bar.update(1)
 
   bar_chart(success, failed)
