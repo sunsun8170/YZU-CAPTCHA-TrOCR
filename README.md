@@ -9,7 +9,7 @@ This project is part of the [YZU Course Bot](https://github.com/sunsun8170/YZU-C
 Below are the steps to set up the environment.
 
 ```bash!
-conda create -n env_name python=3.12
+conda create -n env_name -c conda-forge python=3.12
 conda activate env_name
 cd path/to/YZU-CAPTCHA-TrOCR-main
 pip install -r requirements.txt
