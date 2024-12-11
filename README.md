@@ -94,6 +94,19 @@ The top-performing model was saved and tested on the test set containing 62,982 
 
 The final results demonstrated that **this fine-tuned TrOCR-small-printed model for recognizing CAPTCHA images on the YZU Course Selection System achieved an accuracy of _99.97%_**.
 
+## References
+
+1. TrOCR – Getting Started with Transformer Based OCR
+   * [Website](https://learnopencv.com/trocr-getting-started-with-transformer-based-ocr/)
+   * [Source Code](https://github.com/spmallick/learnopencv/tree/master/TrOCR-Getting-Started-with-Transformer-Based-OCR)
+   * [YouTube](https://www.youtube.com/watch?v=2k7aOpiCU-I)
+2. Fine Tuning TrOCR – Training TrOCR to Recognize Curved Text
+   * [Website](https://learnopencv.com/fine-tuning-trocr-training-trocr-to-recognize-curved-text/)
+   * [Source Code](https://github.com/spmallick/learnopencv/tree/master/Fine-Tuning-TrOCR)
+   * [YouTube](https://www.youtube.com/watch?v=-8a7j6EVjs0)
+3. [TrOCR - Hugging Face](https://huggingface.co/docs/transformers/model_doc/trocr)
+4. [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+
 ## Contact me
 
 Feel free to reach out to me at <s1101613@mail.yzu.edu.tw>
