@@ -32,15 +32,15 @@ This project contains all the code for data collection, preprocessing, training,
 python main.py [-h] [-d] [-p] [-t] [-s] [-i]
 ```
 
-| **parameters**      | **description**                                                                          |
-|-------------------- |----------------------------------------------------------------------------------------- |
-| None                | Runs preprocessing, training, and testing sequentially.                                  |
-| `-h, --help`        | Displays this help message and exits.                                                    |
-| `-d, --dataset`     | Collects CAPTCHA images from the YZU Course Selection System.                            |
-| `-p, --preprocess`  | Executes the preprocessing step.                                                         |
-| `-t, --train`       | Executes the training step.                                                              |
-| `-s, --testing`     | Executes the testing step.                                                               |
-| `-i, --info`        | Displays the model architecture, total parameters and trainable parameters information.  |
+| **parameters**     	| **description**                                                              	|
+|--------------------	|------------------------------------------------------------------------------	|
+| None               	| Runs preprocessing, training, and testing sequentially.                      	|
+| `-h, --help`       	| Displays this help message and exits.                                        	|
+| `-d, --dataset`    	| Collects CAPTCHA images from the YZU Course Selection System.                	|
+| `-p, --preprocess` 	| Executes the preprocessing step.                                             	|
+| `-t, --train`      	| Executes the training step.                                                  	|
+| `-s, --test`       	| Executes the testing step.                                                   	|
+| `-i, --info`       	| Displays the model architecture, total and trainable parameters information. 	|
 
 ## Results of Each Process
 
