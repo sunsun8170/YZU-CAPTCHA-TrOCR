@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is part of the [YZU Course Bot](https://github.com/sunsun8170/YZU-Course-Bot) initiative. It fine-tunes a TrOCR model on 400,000 captchas collected from the [YZU Course Selection System](https://isdna1.yzu.edu.tw/Cnstdsel/Index.aspx) and is trained on a desktop with an NVIDIA GeForce RTX 4090 GPU featuring 24 GB of VRAM. The top-performing model was preserved for future use in the YZU Course Bot, facilitating automatic captcha recognition during system login.
+This project is part of the [YZU Course Bot](https://github.com/sunsun8170/YZU-Course-Bot) initiative. It fine-tunes a TrOCR-small-printed model on 419,880 captchas collected from the [YZU Course Selection System](https://isdna1.yzu.edu.tw/Cnstdsel/Index.aspx) and is trained on a desktop with an NVIDIA GeForce RTX 4090 GPU featuring 24 GB of VRAM. The top-performing model was preserved for future use in the YZU Course Bot, facilitating automatic captcha recognition during system login.
 
 ## Environment
 
@@ -53,7 +53,7 @@ Displays the model architecture, total parameters and trainable parameters infor
 
 We collected a total of 419,880 CAPTCHA images from the [YZU Course Selection System](https://isdna1.yzu.edu.tw/Cnstdsel/Index.aspx) to be used as the dataset for later processing.
 
-To obtain the dataset, download the `captchas_img.zip` file from the [Releases]() page and place it in the same directory as `main.py`.
+To obtain the dataset, download the `captcha_imgs.zip` file from the [Releases]() page and place it in the same directory as `main.py`.
 
 ### Preprocess
 
@@ -68,7 +68,7 @@ The dataset was splitted into train, evaluation, and test sets using a 7:1.5:1.5
 
 ### Train & Evaluation
 
-The TrOCR model was fine-tuned on a training set of 293,916 CAPTCHA images and evaluated on an evaluation set of 62,982 CAPTCHA images.
+The TrOCR-small-printed model was fine-tuned on a training set of 293,916 CAPTCHA images and evaluated on an evaluation set of 62,982 CAPTCHA images.
 
 The Character Error Rate (CER) metric is used to determine the model's best performance, after which the model was saved. A lower CER indicates better model performance.
 
@@ -84,7 +84,7 @@ tensorboard --logdir=./results/train
 
 ### Test
 
-The best model was saved and tested on the test set containing 62,982 CAPTCHA images.
+The top-performing model was saved and tested on the test set containing 62,982 CAPTCHA images.
 
 <p align="center">
   <img src="./partial_result/acc_report.png" alt="acc_report" width="375" height="525">
@@ -92,7 +92,7 @@ The best model was saved and tested on the test set containing 62,982 CAPTCHA im
 
 ## Conclusion
 
-**The final results demonstrated that this fine-tuned model for recognizing CAPTCHA images on the YZU Course Selection System achieved an accuracy of _99.97%_**.
+The final results demonstrated that **this fine-tuned TrOCR-small-printed model for recognizing CAPTCHA images on the YZU Course Selection System achieved an accuracy of _99.97%_**.
 
 ## Contact me
 
