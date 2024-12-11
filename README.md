@@ -32,20 +32,15 @@ This project contains all the code for data collection, preprocessing, training,
 python main.py [-h] [-d] [-p] [-t] [-s] [-i]
 ```
 
-* `no parameters`
-Runs preprocessing, training, and testing sequentially.
-* `-h, --help`
-Displays this help message and exits.
-* `-d, --dataset`
-Collects CAPTCHA images from the YZU Course Selection System.
-* `-p, --preprocess`
-Executes the preprocessing step.
-* `-t, --train`
-Executes the training step.
-* `-s, --testing`
-Executes the testing step.
-* `-i, --info`
-Displays the model architecture, total parameters and trainable parameters information.
+| **parameters**      | **description**                                                                          |
+|-------------------- |----------------------------------------------------------------------------------------- |
+| None                | Runs preprocessing, training, and testing sequentially.                                  |
+| `-h, --help`        | Displays this help message and exits.                                                    |
+| `-d, --dataset`     | Collects CAPTCHA images from the YZU Course Selection System.                            |
+| `-p, --preprocess`  | Executes the preprocessing step.                                                         |
+| `-t, --train`       | Executes the training step.                                                              |
+| `-s, --testing`     | Executes the testing step.                                                               |
+| `-i, --info`        | Displays the model architecture, total parameters and trainable parameters information.  |
 
 ## Results of Each Process
 
@@ -59,12 +54,12 @@ To obtain the dataset, download the `captcha_imgs.zip` file from the [Releases](
 
 The dataset was splitted into train, evaluation, and test sets using a 7:1.5:1.5 ratio.
 
-|   **Dataset**   | **ratio**  |  **imgs**  |
-|:--------------: |:---------: |:---------: |
-|    **train**    |    0.7     |  293,916   |
-| **evaluation**  |    0.15    |   62,982   |
-|    **test**     |    0.15    |   62,982   |
-|   **_TOTAL_**   |    _1_     | _419,880_  |
+| **dataset**     | **ratio**  |  **images**  |
+|---------------- |----------- |------------: |
+| **train**       | 0.7        |     293,916  |
+| **evaluation**  | 0.15       |      62,982  |
+| **test**        | 0.15       |      62,982  |
+| **TOTAL**       | **1**      | **419,880**  |
 
 ### Train & Evaluation
 
