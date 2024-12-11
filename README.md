@@ -72,9 +72,9 @@ The TrOCR-small-printed model was fine-tuned on a training set of 293,916 CAPTCH
 
 The Character Error Rate (CER) metric is used to determine the model's best performance, after which the model was saved. A lower CER indicates better model performance.
 
-| ![train_loss](./partial_result/train_loss.png)  | ![train_learning_rate](./partial_result/train_learning_rate.png)  |
+| ![train_loss](./partial_results/train_loss.png)  | ![train_learning_rate](./partial_results/train_learning_rate.png)  |
 |------------------------------------------------ |------------------------------------------------------------------ |
-| ![eval_loss](./partial_result/eval_loss.png)    | ![eval_cer](./partial_result/eval_cer.png)                        |
+| ![eval_loss](./partial_results/eval_loss.png)    | ![eval_cer](./partial_results/eval_cer.png)                        |
 
 To access the full training results, download the `results.zip` file from the [Releases]() page and place it in the same directory as `main.py`. Then you may start a TensorBoard session by running the following command in your terminal.
 
@@ -87,7 +87,7 @@ tensorboard --logdir=./results/train
 The top-performing model was saved and tested on the test set containing 62,982 CAPTCHA images.
 
 <p align="center">
-  <img src="./partial_result/acc_report.png" alt="acc_report" width="375" height="525">
+  <img src="./partial_results/acc_report.png" alt="acc_report" width="375" height="525">
 </p>
 
 ## Conclusion
