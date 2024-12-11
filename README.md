@@ -48,7 +48,7 @@ python main.py [-h] [-d] [-p] [-t] [-s] [-i]
 
 We collected a total of 419,880 CAPTCHA images from the [YZU Course Selection System](https://isdna1.yzu.edu.tw/Cnstdsel/Index.aspx) to be used as the dataset for later processing.
 
-To obtain the dataset, download the `captcha_imgs.zip` file from the [Releases]() page and place it in the same directory as `main.py`.
+To obtain the dataset, download the `captcha_imgs.zip` file from the [Releases](https://github.com/sunsun8170/YZU-CAPTCHA-TrOCR/releases/) page and place it in the same directory as `main.py`.
 
 ### Preprocess
 
@@ -71,7 +71,7 @@ The Character Error Rate (CER) metric is used to determine the model's best perf
 |------------------------------------------------ |------------------------------------------------------------------ |
 | ![eval_loss](./partial_results/eval_loss.png)    | ![eval_cer](./partial_results/eval_cer.png)                        |
 
-To access the full training results, download the `results.zip` file from the [Releases]() page and place it in the same directory as `main.py`. Then you may start a TensorBoard session by running the following command in your terminal.
+To access the full training results, download the `results.zip` file from the [Releases](https://github.com/sunsun8170/YZU-CAPTCHA-TrOCR/releases/) page and place it in the same directory as `main.py`. Then you may start a TensorBoard session by running the following command in your terminal.
 
 ```bash!
 tensorboard --logdir=./results/train
